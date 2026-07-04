@@ -10,6 +10,7 @@ const Activity_1 = require("../models/Activity");
 const LeaderboardEntry_1 = require("../models/LeaderboardEntry");
 const Workout_1 = require("../models/Workout");
 const connectionString = process.env.MONGODB_URI || 'mongodb://localhost:27017/octofit_db';
+// Seed the octofit_db database with test data
 async function seedDatabase() {
     try {
         await mongoose_1.default.connect(connectionString);
